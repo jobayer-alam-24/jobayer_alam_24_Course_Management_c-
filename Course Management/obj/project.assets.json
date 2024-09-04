@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\Course Management\\Course Management.csproj",
+      "projectUniqueName": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\jobayer_alam_24_Course_Management_c-\\Course Management\\Course Management.csproj",
       "projectName": "Course Management",
-      "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\Course Management\\Course Management.csproj",
+      "projectPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\jobayer_alam_24_Course_Management_c-\\Course Management\\Course Management.csproj",
       "packagesPath": "C:\\Users\\JOBAYER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\Course Management\\obj\\",
+      "outputPath": "C:\\Users\\JOBAYER\\OneDrive\\Tài liệu\\jobayer_alam_24_Course_Management_c-\\Course Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JOBAYER\\AppData\\Roaming\\NuGet\\NuGet.Config"
