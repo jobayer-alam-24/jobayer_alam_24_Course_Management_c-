@@ -45,8 +45,8 @@ namespace Course_Management
             // b1.CreateA_Blog();
             // b1.ShowBlogs();
             // b1.ShowComments();
-            q1.OperateQuizes();
-            q1.Marks();
+            // q1.OperateQuizes();
+            // q1.Marks();
         }
     }
 }
