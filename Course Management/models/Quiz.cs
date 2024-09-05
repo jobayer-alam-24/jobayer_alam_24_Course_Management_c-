@@ -28,6 +28,7 @@ namespace Course_Management.models
             {
                 Console.WriteLine($"{i + 1}. {Questions[i]}");
                 Console.Write($" Answer: ");
+                Console.Beep();
                 Answer = Console.ReadLine().ToLower();
                 CheckQuizes(Answer);
             }
@@ -39,16 +40,28 @@ namespace Course_Management.models
                 case "dhaka":
                     ScoreAdd++;
                     break;
-                case "6":
-                    ScoreAdd++;
-                    break;
                 case "money":
                     ScoreAdd++;
                     break;
-                case "dr. yunus":
+                case "joe biden":
                     ScoreAdd++;
                     break;
-                case "9":
+                case "mahinur rahman ridoy":
+                    ScoreAdd++;
+                    break;
+                case "12":
+                    ScoreAdd++;
+                    break;
+                case "jupiter":
+                    ScoreAdd++;
+                    break;
+                case "5":
+                    ScoreAdd++;
+                    break;
+                case "william shakespeare":
+                    ScoreAdd++;
+                    break;
+                case "france":
                     ScoreAdd++;
                     break;
                 default:
@@ -61,7 +74,7 @@ namespace Course_Management.models
             Console.WriteLine($"*---------Result----------*");
             if (ScoreAdd != 0)
             {
-                Console.WriteLine($"Total Marks: 5");
+                Console.WriteLine($"Total Marks: {Questions.Length}");
                 Console.WriteLine($"Correct Answer: {ScoreAdd}");
                 if (ScoreAdd == 5)
                 {
@@ -75,7 +88,7 @@ namespace Course_Management.models
             }
             else
             {
-                Console.WriteLine($"Total Marks: 5");
+                Console.WriteLine($"Total Marks: {Questions.Length}");
                 Console.WriteLine($"Total Mistakes: {Math.Abs(ScoreSub)}");
                 Console.WriteLine($"Sorry! You did not pass the Exam. Better Luck Next Time.");
             }

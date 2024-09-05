@@ -6,24 +6,25 @@ namespace Course_Management
         static void Main(string[] args)
         {
             string[] QuizLists = {
+                "Who is our Teacher?",
                 "What is the capital of Bangladesh?",
-                "2 + 4 = ?",
-                "What is the Currency of Bangldesh?",
-                "Who is the Prime Minister of Bangldesh?",
-                "3 x 3 = ?"
+                "5 + 7 = ?",
+                "What is the currency of Bangladesh?",
+                "Who is the President of the United States?",
+                "6 x 2 = ?",
+                "What is the largest planet in our solar system?",
+                "What is 10 divided by 2?",
+                "Who wrote 'Romeo and Juliet'?",
+                "Which country is famous for the Eiffel Tower?",
                 };
-            Quiz q1 = new Quiz("#1", "General Knowledge", QuizLists);
-            q1.OperateQuizes();
-            q1.Marks();
 
             // Student s1 = new Student();
             // Instructor is1 = new Instructor();
             // Admin ad = new Admin();
             // Course c1 = new Course();
             // Blog b1 = new Blog();
-            // b1.CreateA_Blog();
-            // b1.ShowBlogs();
-            // b1.ShowComments();
+            Quiz q1 = new Quiz("#1", "General Knowledge", QuizLists);
+
 
             // s1.TakeStudentsInfo();
             // s1.TakeCourseEnrollInfo();
@@ -41,6 +42,11 @@ namespace Course_Management
             // c1.RemoveStudent("Karim");
             // c1.AddStudent("Diana");
             // c1.GetCourseDetails();
+            // b1.CreateA_Blog();
+            // b1.ShowBlogs();
+            // b1.ShowComments();
+            q1.OperateQuizes();
+            q1.Marks();
         }
     }
 }
