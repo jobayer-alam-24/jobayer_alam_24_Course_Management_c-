@@ -5,15 +5,26 @@ namespace Course_Management
     {
         static void Main(string[] args)
         {
-            Student s1 = new Student();
-            Instructor is1 = new Instructor();
-            Admin ad = new Admin();
-            Course c1 = new Course();
-            Blog b1 = new Blog();
-            b1.CreateA_Blog();
-            b1.ShowBlogs();
-            b1.ShowComments();
-            
+            string[] QuizLists = {
+                "What is the capital of Bangladesh?",
+                "2 + 4 = ?",
+                "What is the Currency of Bangldesh?",
+                "Who is the Prime Minister of Bangldesh?",
+                "3 x 3 = ?"
+                };
+            Quiz q1 = new Quiz("#1", "General Knowledge", QuizLists);
+            q1.OperateQuizes();
+            q1.Marks();
+
+            // Student s1 = new Student();
+            // Instructor is1 = new Instructor();
+            // Admin ad = new Admin();
+            // Course c1 = new Course();
+            // Blog b1 = new Blog();
+            // b1.CreateA_Blog();
+            // b1.ShowBlogs();
+            // b1.ShowComments();
+
             // s1.TakeStudentsInfo();
             // s1.TakeCourseEnrollInfo();
             // s1.PrintInfo();
