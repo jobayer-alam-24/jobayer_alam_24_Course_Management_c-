@@ -79,20 +79,43 @@ namespace Course_Management.models
                 if (ScoreAdd == 5)
                 {
                     Console.WriteLine($"Congratulations! All Correct.");
+                    ShowStatistics(ScoreAdd, Questions.Length);
                 }
                 else
                 {
                     Console.WriteLine($"Total Mistakes: {Math.Abs(ScoreSub)}");
                 }
                 Console.WriteLine($"Overall: {ScoreAdd}");
+                ShowStatistics(ScoreAdd, Questions.Length);
             }
             else
             {
                 Console.WriteLine($"Total Marks: {Questions.Length}");
                 Console.WriteLine($"Total Mistakes: {Math.Abs(ScoreSub)}");
                 Console.WriteLine($"Sorry! You did not pass the Exam. Better Luck Next Time.");
+                ShowStatistics(ScoreAdd, Questions.Length);
             }
             Console.WriteLine($"*----------*---------*");
+        }
+        private void ShowStatistics(int value, int TotalValue)
+        {
+            //Formula - value / totalValue * 100
+            int percentage = (value * 100) / TotalValue;
+            int hashes = percentage / TotalValue;
+            
+            Console.Write($"Progress: [");
+            for(int i = 0; i < TotalValue; i++)
+            {
+                if(i < hashes)
+                {
+                    Console.Write($"#");
+                }
+                else
+                {
+                    Console.Write($"-");
+                }
+            }
+            Console.WriteLine($"] {percentage}%");
         }
     }
 }
